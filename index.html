@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+<title>Goalden Lions: The Social Way to Get It Done</title>
+
+<META NAME="DESCRIPTION" CONTENT="Whether you're trying to lose weight, save money, or stop smoking, you don't have to go it alone. Goalden Lions lets you compete with friends to reach the same goal, post your success on Facebook and Twitter, and find text buddies to egg you on all day long.">
+<META NAME="KEYWORDS" CONTENT="lose weight, save money, stop drinking, stop smoking, study more, higher grades, support group"/>
+
+<link rel="stylesheet" href="http://tlk.webfactional.com/static/css/goals.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://tlk.webfactional.com/static/js/jquery-1.7.1.js"></script>
+
+</head>
+
+<body>
+
+<!--
+    Underscore.js
+    Flot.js
+    d3.js
+-->
+<div class="container">
+    <script>
+     $(document).ready(function()
+     {
+        $('#login_link').click(function() 
+        {
+            alert("Login click");
+            $('.login').slideToggle('slow', function() {
+             // Animation complete.
+            });
+     });
+     
+     
+    });
+
+   </script>
+
+    
+    
+    <div class="top_container">
+        <div class="title"></div>
+        <div id="login_link" class="top_menu">How It Works &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Login</a></div>
+        <div class="border"></div>
+        
+        <div class="login">
+            <form name="login_form" id="login_form" method="POST" action="http://tlk.webfactional.com/goalden/action_register/">
+                Username: <input type="text" id="email_in"/><br />
+                Password: <input type="text" id="email_in"/><br />
+                <div class="button" onclick="document.login_form.submit();">Login</div>
+            </form>
+        </div>
+    </div>
+    
+    {% block unique_content %}
+    <div class="tagline">The Social Way to Get It Done</div>
+    <div class="unique_content">    
+        <div class="left_column">
+            <h2>Why Are We Awesome?</h2>
+            
+            <ul>
+                <div class="check_container">
+                    <div class="check">
+                    <img src="http://tlk.webfactional.com/static/images/goals/site/check.png" height="42" width="42"/>
+                    </div>
+                    <div class="check_text">
+                    <li>Science says you're twice as likely to meet your goals if your friends do it too</li>
+                    </div>
+                </div>
+                <div class ="check_container">
+                    <div class ="check">
+                    <img src="http://tlk.webfactional.com/static/images/goals/site/check.png" height="42" width="42"/>
+                    </div>
+                    <div class="check_text">
+                    <li>Join a community of like minded indviduals, and motivate one another</li>
+                    </div>
+                </div>
+                <div class ="check_container">
+                    <div class ="check">
+                    <img src="http://tlk.webfactional.com/static/images/goals/site/check.png" height="42" width="42"/>
+                    </div>
+                    <div class="check_text">
+                    <li>Easily track, monitor, and share your progress</li>
+                    </div>
+                </div>
+            </ul>
+            
+            <div class="feed">
+            <h2>Goalden Lion Weekly Challenges</h2>
+            </div>
+            </h2>
+            
+        </div>
+        
+        <div class="right_column">
+            <h2>Join the Pack</h2>
+            <form id="register" method="POST" action="http://tlk.webfactional.com/goalden/action_register/">
+            <p>Email:</p>
+                <input type="text" id="email_in"/>
+            
+            <p>Username:</p>
+                <input type="text" id="username_in"/>
+                
+            <p>Password:</p>
+                <input type="text" id="password_in"/>
+                
+            <p>Confirm Password:</p>
+                <input type="text" id="confirm_in"/>
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+    
+    <div class="footer">
+        Created at Princeton Hackweek
+    </div>
+</div>
+</body>
